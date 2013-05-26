@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/stat_layout_top" >
+        
+        <TextView
+        android:id="@+id/stat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:text="@string/stat_title"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="32dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" >
+                
+                <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/stat_score"/>
+    
+      			<TextView
+		            android:id="@+id/stat_score"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="9999 €"
+		            android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" >
+      		 
+                <TextView
+		            android:id="@+id/textView3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/stat_rank" />
+		
+		        <TextView
+		            android:id="@+id/stat_rank"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="0 / 1337"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            
+       
+       
+       
+        </LinearLayout>
+        
+        <View
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@android:color/darker_gray"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/stat_layout_top"
+        android:orientation="vertical" >
+
+        
+       
+
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    
+                    <LinearLayout
+                        android:id="@+id/tabProgression"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <WebView
+                            android:id="@+id/webTabProgression"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabHighscore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        
+                        <WebView
+                            android:id="@+id/webTabHighscore"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <!-- 
+                    <LinearLayout
+                        android:id="@+id/tabStat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        
+                        <WebView
+                            android:id="@+id/webTabStat"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+                     -->
+                    <LinearLayout
+                        android:id="@+id/tabOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+                            
+                              <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stat_title_option_nickname"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" >
+
+                                  <EditText
+                                      android:id="@+id/editText_nickname"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight="1"
+                                      android:ems="10" >
+
+                                      <requestFocus />
+                                  </EditText>
+
+                                  <Button
+                                      android:id="@+id/stat_button_update"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight="1"
+                                      android:text="@string/stat_button_option_update" />
+
+                              </LinearLayout>
+
+                              <TextView
+                                  android:id="@+id/textView4"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/stat_title_option_reset"
+                                  android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                              <Button
+                                  android:id="@+id/stat_button_resetprogress"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/stat_button_option_resetprogress" />
+                              
+                              <Button
+                                  android:id="@+id/stat_button_resetaccount"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/stat_button_option_resetaccount" />
+                             	
+                        </LinearLayout>
+                        
+                    </LinearLayout>
+
+                </FrameLayout>
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_marginBottom="-4dp" >
+                </TabWidget>
+            </LinearLayout>
+        </TabHost>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

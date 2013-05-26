@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.tfe.android"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <service 
+            android:name=".service.WebService"
+            android:enabled="true"
+             />
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_home" 
+            android:screenOrientation="portrait"
+        	android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlaymenuActivity"
+            android:label="@string/title_activity_playmenu" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.tfe.android.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name=".AgainstclockGamemodeActivity"
+            android:label="@string/title_activity_againstclock_gamemode" 
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.tfe.android.MainActivity" />
+        </activity>
+        
+         <activity
+            android:name=".StatActivity"
+            android:label="@string/title_activity_stat" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.tfe.android.MainActivity" />
+        </activity>
+        
+         
+         <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.tfe.android.MainActivity" />
+        </activity>
+        
+         
+         <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.tfe.android.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

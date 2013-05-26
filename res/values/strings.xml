@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">Curve Predictor</string>
+    <string name="home_title">Curve Predictor</string>
+    <string name="home_button_play">Play</string>
+    <string name="home_button_stats">Stats</string>
+    <string name="home_button_help">Help</string>
+    <string name="home_button_about">About</string>
+    <string name="home_button_exit">Exit</string>
+    
+    <string name="home_modal_title">First launch</string>
+    <string name="home_modal_message">This is the first time you launch Curve Predictor. It is recommanded to have a look at a short tutorial before playing the game.</string>
+    <string name="home_modal_play">Play anyway</string>
+    <string name="home_modal_help">View tutorial</string>
+    
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home">Curve Predictor</string>
+    <string name="title_activity_playmenu">Curve Predictor - Play Menu</string>
+    <string name="playmenu_title_main">Game Selection</string>
+    <string name="playmenu_title_gamemode">Game Mode</string>
+    <string name="playmenu_title_predictiontype">Prediction Type</string>
+    <string name="playmenu_title_predictioninput">Prediction Input</string>
+    <string name="playmenu_title_level">Level: </string>
+    <string name="playmenu_button_gamemode_normal">Progressive</string>
+    <string name="playmenu_button_gamemode_againstclock">Against-the-clock</string>
+    <string name="playmenu_button_predictiontype_attheend">A the end</string>
+    <string name="playmenu_button_predictiontype_progressive">Progressive</string>
+    <string name="playmenu_button_predictioninput_value">Value</string>
+    <string name="playmenu_button_predictioninput_trend">Trend</string>
+    <string name="playmenu_button_predictioninput_pm">Plus/Minus</string>
+    <string name="playmenu_description_gamemode_normal">Given a set of time series, make predictions as accurate as possible to increase your score.</string>
+    <string name="playmenu_description_gamemode_againstclock">Predict as much time series as possible during the allotted time.</string>
+    <string name="playmenu_description_gamemode_againstclock_restricted"><![CDATA[<font color="red">You must complete at least one level in the normal gamemode.</font>]]></string>
+    <string name="playmenu_description_predictiontype_attheend">Predict the end of time series.</string>
+    <string name="playmenu_description_predictiontype_progressive">Predict time series step by step. (UNSUPPORTED)</string>
+    <string name="playmenu_description_predictioninput_value">Approximate the exact value.</string>
+    <string name="playmenu_description_predictioninput_trend">Approximate the trend of time series by drawing it.</string>
+    <string name="playmenu_description_predictioninput_pm">Approximate the general trend through a plus or minus choice.</string>
+    <string name="playmenu_description_predictioninput_level">Current level: %1$d/%2$d.</string>
+    <string name="playmenu_description_predictioninput_complete"><![CDATA[<font color="red">You have already completed this sort of prediction.</font>]]></string>
+    <string name="playmenu_button_menu_back">Back</string>
+    <string name="playmenu_button_menu_play">Play</string>
+    <string name="playmenu_checkbox_training">Training mode</string>
+    <string name="title_activity_againstclock_gamemode">Curve Predictor - Play</string>
+    <string name="title_activity_stat">Curve Predictor - Stat</string>
+    <string name="title_activity_help">Curve Predictor - Help</string>
+    <string name="title_activity_about">Curve Predictor - About</string>
+    <string name="gamemode_normal_title_currentscore">Current score</string>
+    <string name="gamemode_normal_button_continue">Continue</string>
+    <string name="gamemode_normal_button_quit">Quit</string>
+    <string name="gamemode_againstclock_button_skip">Skip</string>
+    <string name="gamemode_againstclock_button_quit">Quit</string>
+    <string name="gamemode_againstclock_button_reset">Reset</string>
+    <string name="modal_confidence_button_ok">OK</string>
+    <string name="modal_confidence_button_cancel">Cancel</string>
+    <string name="notification_message">Notification message</string>
+    <string name="notification_title">Notification title</string>
+    <string name="ticker_text">Ticket text</string>
+    <string name="prediction_button_valid">Valid</string>
+    <string name="stat_score">Current score</string>
+    <string name="stat_rank">Current rank</string>
+    <string name="stat_title">Statistics</string>
+    <string name="stat_title_option_nickname">Nickname</string>
+    <string name="stat_title_option_reset">Reset Progression</string>
+    <string name="stat_button_option_resetprogress">Reset my progression</string>
+    <string name="stat_button_option_resetaccount">Reset my account</string>
+    <string name="stat_button_option_update">Update</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="gamemode_againstclock_button_zoomin">Zoom in</string>
+    <string name="gamemode_againstclock_button_zoomout">Zoom out</string>
+    <string name="help_title">Help</string>
+    <string name="about_title">About</string>
+    <string name="error_servernotavailable_title">Server Unavailable</string>
+    <string name="error_servernotavailable_switch">Switched to secondary server.</string>
+    <string name="error_servernotavailable">Servers couldn\'t be reached, you won\'t be able to play until they are online or you have more connectivity. Sorry for the inconvenience.</string>
+    
+    <string name="button_ok">OK</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_retry">Retry</string>
+    
+    <string name="play_modal_noprediction_title">No Prediction</string>
+    <string name="play_modal_noprediction_message">You must enter a prediction before validate it.</string>
+    
+    
+    <string name="play_modal_prepare_title">Get Ready...</string>
+    <string name="play_modal_prepare_message">Press OK when you are ready: you will have one minute to predict as many series as possible.</string>
+    
+    <string name="play_modal_timeout_title">Time is over</string>
+    <string name="play_modal_timeout_message_none">Time is over! You have not made one single prediction.</string>
+    <string name="play_modal_timeout_message_one">Time is over! You have completed 1 prediction.</string>
+    <string name="play_modal_timeout_message_multiple">Time is over! You have completed %1$s predictions.</string>
+    <string name="play_modal_timeout_tryagain">Try again</string>
+    <string name="play_modal_timeout_quit">Quit</string>
+    
+    <string name="play_modal_quit_title">Confirmation</string>
+    <string name="play_modal_quit_message">Are you sure you want to stop making predictions?</string>
+    <string name="play_modal_quit_yes">Yes</string>
+    <string name="play_modal_quit_no">No</string>
+    
+    
+    <string name="play_modal_endofgame_title">No Curve Left</string>
+    <string name="play_modal_endofgame_message">Congratulations, you have predicted every curve for this type of input!</string>
+    <string name="play_modal_endofgame_back">Return to game selection screen</string>
+    
+    
+    <string name="play_modal_endofgroup_title">Level Complete</string>
+    <string name="play_modal_endofgroup_message">Congratulations, you have predicted every curve of this level! Now you can access to the next level.</string>
+    <string name="play_modal_endofgroup_nextlevel">Next level</string>
+    <string name="play_modal_endofgroup_samelevel">Don\'t level up</string>
+    <string name="play_modal_endofgroup_back">Return to game screen</string>
+    
+    
+    <string name="play_modal_endofgrouptraining_title">All Curves Predicted</string>
+    <string name="play_modal_endofgrouptraining_message">Congratulations, you have predicted every curve of the level! However, since you are in the training mode, you cannot access to the next level.</string>
+    <string name="play_modal_endofgrouptraining_disable">Disable training mode</string>
+    <string name="play_modal_endofgrouptraining_continue">Try another set of curves</string>
+    <string name="play_modal_endofgrouptraining_back">Return to game screen</string>
+    
+    
+    <string name="play_modal_endofgrouprandom_title">All Curves Predicted</string>
+    <string name="play_modal_endofgrouprandom_message">Congratulations, you have predicted every curve of this group!</string>
+    <string name="play_modal_endofgrouprandom_stay">Stay in random mode</string>
+    <string name="play_modal_endofgrouprandom_back">Return to game screen</string>
+    
+    
+    <string name="play_modal_level_title">Current Level</string>
+    <string name="play_modal_level_message">"Level %1$s: %2$s curves to predict</string>
+    <string name="play_modal_level_random">%1$s curves to predict"</string>
+    <string name="play_modal_level_ok">OK</string>
+    
+    <string name="play_confidence_gain"><![CDATA[<font color="green">%1$s</font>]]></string>
+    <string name="play_confidence_loss"><![CDATA[<font color="red">%1$s</font>]]></string>
+    
+    <string name="play_toast_allzonepredicted">All zone(s) predicted</string>
+    
+    <string name="play_status_score">Score: %1$s€</string>
+    <string name="play_status_curveremaining_one">1 curve remaining</string>
+    <string name="play_status_curveremaining_more">%1$s curves remaining</string>
+    <string name="play_status_level">Level %1$s</string>
+    <string name="play_status_random">Random mode</string>
+    
+    <string name="playmenu_spinner_random">Random</string>
+    <string name="playmenu_spinner_level">Level %1$s</string>
+   
+    <string name="stat_tab_top_title">Top</string>
+    <string name="stat_tab_gamestat_title">Game stats</string>
+    <string name="stat_tab_progression_title">Progression</string>
+    <string name="stat_tab_option_title">Options</string>
+    
+    <string name="stat_toast_emptynickname">You must enter a not empty nickname</string>
+    <string name="stat_toast_smallnickname">Your nickname must contain at least 3 letters.</string>
+    <string name="stat_toast_updatednickname">Nickname updated</string>
+    <string name="stat_toast_errornickname">Error while updating nickname</string>
+    
+    
+    <string name="stat_toast_resettedprogress">Progression resetted</string>
+    <string name="stat_toast_errorprogress">Error while resetting your progression</string>
+    <string name="stat_toast_resettedaccount">Account resetted</string>
+    <string name="stat_toast_erroraccount">Error while resetting your account</string>
+    
+    <string name="stat_modal_confirmresetprogress_title">Confirmation</string>
+    <string name="stat_modal_confirmresetprogress_message">Are you sure you want to reset your progression? Your score won\'t be affected.</string>
+    
+    
+    <string name="stat_modal_confirmresetaccount_title">Confirmation</string>
+    <string name="stat_modal_confirmresetaccount_message">Are you sure you want to reset your account? You will loose your score and rank on this device and on those associated to your Google account.</string>
+</resources>
