@@ -1,13 +1,14 @@
-package be.tfe.android;
+package be.tfe.android.activities;
 
 import java.util.concurrent.ExecutionException;
 
+import be.tfe.android.R;
 import be.tfe.android.homeview.HomeLogo;
 import be.tfe.android.misc.utils.AppConfig;
 import be.tfe.android.misc.utils.AppUtils;
-import be.tfe.android.misc.utils.UserInfoPrimitive;
 import be.tfe.android.tasks.UserInfoTask;
-import be.tfe.android.tasks.UserRequest;
+import be.tfe.android.tasks.containers.UserRequest;
+import be.tfe.android.tasks.primitives.UserInfoPrimitive;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;

@@ -12,7 +12,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import be.tfe.android.misc.utils.AppConfig;
 import be.tfe.android.misc.utils.AppUtils;
-import be.tfe.android.misc.utils.UserInfo;
+import be.tfe.android.tasks.containers.UserInfo;
 import android.os.AsyncTask;
 import android.util.Log;
 

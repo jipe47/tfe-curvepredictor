@@ -1,10 +1,11 @@
-package be.tfe.android;
+package be.tfe.android.activities;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
+import be.tfe.android.R;
 import be.tfe.android.curve.Curve;
 import be.tfe.android.curve.Zone;
 import be.tfe.android.curveviewer.*;
@@ -15,10 +16,11 @@ import be.tfe.android.misc.utils.AppConfig;
 import be.tfe.android.misc.utils.AppUtils;
 import be.tfe.android.misc.utils.Callback;
 import be.tfe.android.misc.utils.CircularBuffer;
-import be.tfe.android.misc.utils.CurveRequest;
-import be.tfe.android.misc.utils.CurveResponse;
-import be.tfe.android.tasks.GetPredictionTask;
+import be.tfe.android.misc.utils.ServerUnavailableException;
+import be.tfe.android.tasks.GetSeriesTask;
 import be.tfe.android.tasks.SendPredictionTask;
+import be.tfe.android.tasks.containers.CurveRequest;
+import be.tfe.android.tasks.containers.CurveResponse;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -925,7 +927,7 @@ public class AgainstclockGamemodeActivity extends Activity {
 		cr.level			= this.currentGroupPosition;
 		cr.random			= this.isRandom;
 		
-		GetPredictionTask spt = new GetPredictionTask();
+		GetSeriesTask spt = new GetSeriesTask();
 		spt.execute(cr);
 		CurveResponse response = null;
 		try {

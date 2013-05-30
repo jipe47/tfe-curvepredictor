@@ -1,4 +1,4 @@
-package be.tfe.android.curve;
+package be.tfe.android.tasks.primitives;
 
 public class ZonePrimitive {
 	public int id;

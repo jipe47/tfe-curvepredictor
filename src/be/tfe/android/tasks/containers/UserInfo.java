@@ -1,6 +1,6 @@
-package be.tfe.android.misc.utils;
+package be.tfe.android.tasks.containers;
 
-public class UserInfoPrimitive {
+public class UserInfo {
 	public int id, rank, nbr_user;
 	public float score;
 	public String nickname;
@@ -15,19 +15,27 @@ public class UserInfoPrimitive {
 	public float getScore() {
 		return score;
 	}
-	
+
 	public int getRank()
 	{
 		return rank;
+	}
+	
+	public int getNbrUser()
+	{
+		return nbr_user;
 	}
 	
 	public String getNickname()
 	{
 		return nickname;
 	}
-	
-	public int getNbrUser()
-	{
-		return nbr_user;
+
+	public void setIdUser(int id) {
+		this.id = id;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 }

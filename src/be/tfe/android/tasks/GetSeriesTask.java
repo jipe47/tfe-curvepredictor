@@ -19,13 +19,13 @@ import org.apache.http.params.HttpParams;
 import com.google.gson.Gson;
 
 import be.tfe.android.curve.Curve;
-import be.tfe.android.curve.CurveResponsePrimitive;
 import be.tfe.android.misc.utils.AppConfig;
-import be.tfe.android.misc.utils.CurveRequest;
-import be.tfe.android.misc.utils.CurveResponse;
+import be.tfe.android.tasks.containers.CurveRequest;
+import be.tfe.android.tasks.containers.CurveResponse;
+import be.tfe.android.tasks.primitives.CurveResponsePrimitive;
 import android.util.Log;
 
-public class GetPredictionTask extends AppAsyncTask<CurveRequest, Void, CurveResponse> {
+public class GetSeriesTask extends AppAsyncTask<CurveRequest, Void, CurveResponse> {
 	private final String TAG = "GPT";
 	private final int INTERNET_CURVEFETCHING_TIMEOUT = 2000;
 	

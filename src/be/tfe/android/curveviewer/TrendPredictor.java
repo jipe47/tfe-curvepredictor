@@ -12,6 +12,7 @@ import be.tfe.android.curve.Point;
 import be.tfe.android.curve.Zone;
 import be.tfe.android.misc.enu.PredictionInput;
 import be.tfe.android.misc.utils.AppConfig;
+import be.tfe.android.misc.utils.BadXException;
 
 public class TrendPredictor extends CurvePredictor {
 

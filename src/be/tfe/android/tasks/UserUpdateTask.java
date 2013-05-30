@@ -10,7 +10,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import be.tfe.android.misc.utils.AppConfig;
-import be.tfe.android.misc.utils.UserInfo;
+import be.tfe.android.tasks.containers.UserInfo;
 import android.os.AsyncTask;
 
 public class UserUpdateTask extends AsyncTask<UserInfo, Void, Boolean> {

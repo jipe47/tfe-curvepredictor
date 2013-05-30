@@ -18,7 +18,8 @@ import com.google.gson.Gson;
 
 import be.tfe.android.misc.utils.AppConfig;
 import be.tfe.android.misc.utils.AppUtils;
-import be.tfe.android.misc.utils.UserInfoPrimitive;
+import be.tfe.android.tasks.containers.UserRequest;
+import be.tfe.android.tasks.primitives.UserInfoPrimitive;
 import android.os.AsyncTask;
 import android.util.Log;
 

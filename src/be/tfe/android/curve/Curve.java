@@ -9,6 +9,8 @@ import java.util.TreeMap;
 import android.util.Log;
 import be.tfe.android.curveviewer.Prediction;
 import be.tfe.android.misc.utils.AppConfig;
+import be.tfe.android.tasks.primitives.CurvePrimitive;
+import be.tfe.android.tasks.primitives.ZonePrimitive;
 
 public class Curve {
 

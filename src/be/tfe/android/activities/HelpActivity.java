@@ -1,5 +1,6 @@
-package be.tfe.android;
+package be.tfe.android.activities;
 
+import be.tfe.android.R;
 import be.tfe.android.misc.utils.AppConfig;
 import be.tfe.android.misc.utils.MyWebViewClient;
 import android.app.Activity;

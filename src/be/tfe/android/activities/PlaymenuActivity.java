@@ -1,8 +1,12 @@
-package be.tfe.android;
+package be.tfe.android.activities;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import be.tfe.android.R;
+import be.tfe.android.R.id;
+import be.tfe.android.R.layout;
+import be.tfe.android.R.string;
 import be.tfe.android.misc.enu.GameMode;
 import be.tfe.android.misc.enu.PredictionInput;
 import be.tfe.android.misc.enu.PredictionType;

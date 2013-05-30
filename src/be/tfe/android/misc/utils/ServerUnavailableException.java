@@ -1,14 +1,14 @@
-package be.tfe.android;
+package be.tfe.android.misc.utils;
 
 public class ServerUnavailableException extends Exception {
 	private static final long serialVersionUID = 1L;
 
-	ServerUnavailableException()
+	public ServerUnavailableException()
 	{
 		super();
 	}
 	
-	ServerUnavailableException(String msg)
+	public ServerUnavailableException(String msg)
 	{
 		super(msg);
 	}

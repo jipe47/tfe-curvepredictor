@@ -22,7 +22,7 @@
              />
         
         <activity
-            android:name=".MainActivity"
+            android:name="be.tfe.android.activities.MainActivity"
             android:label="@string/title_activity_home" 
             android:screenOrientation="portrait"
         	android:configChanges="orientation|keyboardHidden">
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PlaymenuActivity"
+			android:name="be.tfe.android.activities.PlaymenuActivity"
             android:label="@string/title_activity_playmenu" 
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
@@ -44,7 +44,7 @@
         </activity>
         
         <activity
-            android:name=".AgainstclockGamemodeActivity"
+			android:name="be.tfe.android.activities.AgainstclockGamemodeActivity"
             android:label="@string/title_activity_againstclock_gamemode" 
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
@@ -55,7 +55,7 @@
         </activity>
         
          <activity
-            android:name=".StatActivity"
+             android:name="be.tfe.android.activities.StatActivity"
             android:label="@string/title_activity_stat" 
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
@@ -67,7 +67,7 @@
         
          
          <activity
-            android:name=".HelpActivity"
+            android:name="be.tfe.android.activities.HelpActivity"
             android:label="@string/title_activity_help" 
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
@@ -75,8 +75,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="be.tfe.android.MainActivity" />
-        </activity>
-        
+        </activity> 
          
          <activity
             android:name=".AboutActivity"

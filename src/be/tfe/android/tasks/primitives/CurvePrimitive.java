@@ -1,4 +1,5 @@
-package be.tfe.android.curve;
+package be.tfe.android.tasks.primitives;
+
 
 public class CurvePrimitive {
 	public int id;

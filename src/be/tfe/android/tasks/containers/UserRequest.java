@@ -1,4 +1,4 @@
-package be.tfe.android.tasks;
+package be.tfe.android.tasks.containers;
 
 public class UserRequest {
 	public int id;

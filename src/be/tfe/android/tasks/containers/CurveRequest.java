@@ -1,4 +1,4 @@
-package be.tfe.android.misc.utils;
+package be.tfe.android.tasks.containers;
 
 import be.tfe.android.misc.enu.GameMode;
 import be.tfe.android.misc.enu.PredictionInput;

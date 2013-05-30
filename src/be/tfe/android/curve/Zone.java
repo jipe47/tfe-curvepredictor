@@ -10,6 +10,7 @@ import be.tfe.android.curveviewer.CurveView;
 import be.tfe.android.curveviewer.Prediction;
 import be.tfe.android.misc.enu.PredictionInput;
 import be.tfe.android.misc.utils.AppConfig;
+import be.tfe.android.tasks.primitives.ZonePrimitive;
 
 public class Zone {
 	@SuppressWarnings("unused")
